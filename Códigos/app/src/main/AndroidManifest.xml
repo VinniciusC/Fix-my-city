@@ -32,7 +32,7 @@
             tools:ignore="GoogleAppIndexingWarning">
         <meta-data
                 android:name="com.google.android.geo.API_KEY"
-                android:value="AIzaSyANts9LcnpMp1mzhWTkAF4VTDCWNg7sryI"/>
+                android:value=""/>
         <provider
                 android:name="android.support.v4.content.FileProvider"
                 android:authorities="com.example.vinicius.fixmycity.fileprovider"
