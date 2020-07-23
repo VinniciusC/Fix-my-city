@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Cenario_Cadastro.Cadastro_Dificuldades"
+        android:orientation="vertical">
+
+
+   <TextView
+           android:id="@+id/text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/qual_o_problema_encontrado"
+           android:layout_marginHorizontal="16dp"
+           android:textSize="20sp"
+   />
+
+   <TextView
+           android:id="@+id/textLabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/categorias"
+           android:layout_marginHorizontal="16dp"
+           android:textSize="16sp"
+           android:layout_marginTop="50dp"
+
+   />
+
+   <Spinner
+           android:id="@+id/spinnerCategorias"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginHorizontal="16dp"
+           android:layout_below="@id/textLabel"
+           android:clickable="true"
+   />
+
+   <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginHorizontal="16dp"
+           android:inputType="text"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:id="@+id/desc"
+           android:layout_below="@id/linearL"
+           android:layout_marginTop="40dp"
+           android:hint="Descreva o problema"
+
+   />
+   <RelativeLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginHorizontal="16dp"
+                 android:layout_below="@id/spinnerCategorias"
+                 android:layout_marginTop="20dp"
+                 android:id="@+id/linearL">
+
+   <FrameLayout android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+      <ImageView
+              android:id="@+id/image"
+              android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:src="@drawable/item_sem_imagem"
+              android:background="#f2f2f2"
+             />
+
+      <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom"
+                     >
+
+         <ImageButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_camera_alt"
+                 android:id="@+id/tirarFotoBTN"
+                 android:layout_marginLeft="10dp"
+                 android:background="@drawable/btn_circle"
+         />
+
+         <ImageButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_folder"
+                 android:id="@+id/selecionarFoto"
+                 android:layout_marginLeft="18dp"
+                 android:gravity="bottom"
+                 android:textAlignment="center"
+                 android:textColor="@color/vermelho"
+                 android:background="@drawable/btn_circle"
+         />
+
+      </LinearLayout>
+
+      </FrameLayout>
+
+   </RelativeLayout>
+
+   <Button
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:text="@string/adicionar"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+           android:id="@+id/Adicionar"
+           android:background="@drawable/btn_shape_round"
+           android:textColor="#fff"
+           android:layout_marginBottom="15dp"
+   />
+</RelativeLayout>
+

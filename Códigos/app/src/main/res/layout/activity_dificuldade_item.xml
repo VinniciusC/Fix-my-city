@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        tools:context=".Cenario_Lista.Dificuldade_item"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+   <ImageView
+           android:id="@+id/ivImage"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="16dp"/>
+
+
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:paddingBottom="10dp"
+      android:duplicateParentState="true">
+
+      <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/Categoria"
+              android:textSize="16sp"
+              android:layout_marginHorizontal="16dp"
+              android:layout_marginTop="16dp"
+              android:textStyle="bold"
+              android:text="@string/categoria"
+              android:duplicateParentState="true"/>
+
+      <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/Distancia"
+           android:textSize="16sp"
+           android:layout_marginHorizontal="16dp"
+           android:text="@string/distancia"
+
+           android:duplicateParentState="true"
+      />
+      <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/Data"
+           android:textSize="14sp"
+           android:layout_marginHorizontal="16dp"
+           android:layout_gravity="end"
+           android:text="@string/data"
+           android:duplicateParentState="true"/>
+
+
+   </LinearLayout>
+
+
+</LinearLayout>
